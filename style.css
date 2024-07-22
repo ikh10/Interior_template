@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    background-color: rgb(249, 248, 250);
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.sidebar{
+    background-color: rgb(244, 67, 54);
+    color: white;
+    font-size: 20px;
+    height: 100vh;
+    position: fixed;
+    width: 300px;
+    padding: 8px 32px;
+    overflow: hidden;
+}
+
+.name{
+    font-size: 24px;
+    padding: 74px 0px;
+    margin: 10px 0px ;
+}
+
+.navs{
+    margin-left: -16px;
+
+}
+
+.navs a:hover{
+    color: black;
+    background-color: white;
+}
+
+.navs a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 8px 16px ;
+    width: 268px;
+}
+
+/* content */
+.main{
+    width: 100%;
+    margin-left: 340px;
+    margin-right: 40px;
+}
+  
+h1{
+    margin: 10px 0px;
+    font-size: 64px;
+}
+
+hr{
+    width:70px;
+    border:5px solid red; 
+    border-radius: 20px;
+    margin: 20px 0px; 
+}
+
+.headings{
+    color: rgb(252, 57, 57); 
+    font-size: 48px;
+}
+
+.showcase{
+    line-height: 80px;
+    padding: 0px 16px;
+    margin-top: 80px;
+}
+  
+.allpics{
+    display: flex;
+    padding: 0px 8px;
+}
+
+.pics{
+    display: block;
+    padding:0px 8px;
+}
+
+img{
+    width: 100%;
+    opacity: 0.8;
+    margin-top: 16px;
+    margin-bottom: -6px;
+}
+.allpics img:hover{
+    opacity: 1.0;
+}
+
+p{
+    margin: 16px 0px;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.section{
+    margin-top: 75px;
+    padding: 0px 16px;
+}
+
+.team{
+    filter: grayscale(0.75);
+    width: 100%;
+}
+
+.mem{
+    display: flex;
+    padding: 0px 8px;
+}
+
+.about{
+    padding: 0px 8px;
+    margin-bottom: 16px;
+}
+
+.desc{
+    padding: 0px 16px;
+    background-color: rgb(241, 241, 241);
+}
+
+.sides{
+    display: flex;
+    text-align: center;
+    padding: 0px 8px;
+}
+
+.half{
+    margin-bottom: 16px;
+    padding: 0px 8px;
+    width: 50%;
+}
+
+.ltop{
+    background-color: #616161; 
+    padding: 32px 12px; 
+    color: white; 
+    font-size: 24px;
+}
+
+.rtop{
+    background-color: #F44336; 
+    padding: 32px 12px; 
+    color: white; 
+    font-size: 24px;
+}
+
+li{
+    list-style: none;
+    padding: 17px;
+    border-bottom-color: rgb(221, 221, 221);
+    background-color: rgb(241, 241, 241);
+    border-bottom-style: solid;
+    border-bottom-width: 0.6px ;
+}
+
+h2{
+    margin: 10px 0;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.btnn{
+    padding:12px 24px ;
+    width: 108.275px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btnn:hover{
+    color: white;
+    background-color: black;
+}
+
+
+.Details{
+    margin: 16px 0px;
+}
+
+input{
+    padding: 8px;
+    width: 100%;
+    display: block;
+    border: 0.8px solid rgb(204, 204, 204);
+    line-height: 24px;
+}
+
+button {
+    width: 100%;
+    font-size: 17px;
+    background-color: rgb(244, 67, 54);
+    color: white;
+    padding: 12px 24px;
+    margin-bottom: 16px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(198, 194, 194);
+    color: black;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 75px;
+    padding: 32px 58px 32px 12px ;
+    background-color: #f1f1f1 ;
+}
+
+/* media */
+
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 250px;
+        padding: 8px 24px;
+    }
+    .main {
+        width: calc(100% - 250px);
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+    .main {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+    .headings {
+        font-size: 36px;
+    }
+    .navs a {
+        width: 100%;
+    }
+    .btnn {
+        width: 100%;
+    }
+    .footer {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .allpics{
+        display: block;
+    }
+
+    .mem{
+        display: block;
+    }
+}
